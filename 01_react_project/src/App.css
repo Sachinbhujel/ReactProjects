@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.imgs{
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 80px;
+}
+
+.outer_container{
+  background: white;
+  padding: 20px;
+}
+
+.inner_main {
+  width: 50vw;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info_div{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.inner_main h3{
+  color: black;
+}
+
+.total_students{
+  margin-bottom: 15px;
+  color: black;
+}
+
+.inner_main p{
+  color: rgb(87 87 87);
+}
+
+.outer_container button{
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+}
