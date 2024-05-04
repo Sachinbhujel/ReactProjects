@@ -23,7 +23,7 @@ body{
 .generate_div h1{
   color: black;
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -43,7 +43,7 @@ body{
 .buttons{
   margin-top: 10px;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .buttons button{
