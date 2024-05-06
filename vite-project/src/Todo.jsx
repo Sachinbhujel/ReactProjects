@@ -1,34 +1,41 @@
-import ShowTodo from "./ShowTodo";
+import React, { useState } from 'react'
 
-function TodoDiv() {
+function Todo() {
+  let [value, setValue] = useState("");
+  let [data, setData] = useState([]);
 
-
-  function SubmitBtn(){
-  var input = document.getElementById("input");
-  
-  if(input.value == ""){
-    alert("Type something..")
-  } else{
-    document.getElementById("allDiv").innerHTML += `<div className="showDiv">
-    <p>${input.value}</p>
-    <div className='buttons'>
-      <button className='edit'>Edit</button>
-      <button className='delete'>Delete</button>
-    </div>
-</div>`;
+  function addValue(){
+    if (value.trim() === '') {
+      alert("Please enter a valid value.");
+      return; // exit the function if input value is empty
     }
+    
+    setData((data) => {
+      const updateData = [...data, value]
+      setValue('')
+      return updateData
+    })
   }
+  return (
+    <>
+      <input type='text' value={value} placeholder="Enter your list..." onChange={(e)=> setValue(e.target.value)}></input>
+      <div>Todo</div>
+      <button onClick={addValue}>Add</button>
+      <p>Here is your list :{")"}</p>
 
-    return (
-      <div className="todoDiv">
-        <h2>Todo List</h2>
-        <div className="inputDiv">
-          <input type="text" id="input" placeholder="Add a todo..."></input>
-          <button onClick={SubmitBtn}>Submit</button>
-        </div>
-        <ShowTodo/>
-      </div>
-    );
-  }
-  
-  export default TodoDiv;  
+      {data.length > 0 && data.map((data, index) =>{
+        return (
+            <div key={index} className="lists_div">
+              <div>{data}</div>
+              <div className='buttons_div'>
+                <button>Edit</button>
+                <button>Remove</button>
+              </div>
+            </div>
+        )
+      })}
+    </>
+  )
+}
+
+export default Todo

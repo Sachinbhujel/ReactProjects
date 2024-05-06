@@ -1,11 +1,11 @@
 import './App.css'
-import TodoDiv from './Todo'
+import Todo from './Todo'
 
 function App() {
 
   return (
     <div className='main'>
-      <TodoDiv/>
+      <Todo/>
     </div>
   )
 }
