@@ -16,25 +16,40 @@ function Todo() {
       return updateData
     })
   }
+
+  function removeList(index) {
+    const newList = data.filter((elem, id) => index !== id);
+    setData(newList);
+    const removeAlertElement = document.getElementById("removeAlert");
+    removeAlertElement.innerHTML = "List Removed";
+    removeAlertElement.style.display = "block";
+    setTimeout(() => {
+      removeAlertElement.style.display = "none";
+    }, 1500);
+  }  
+
   return (
-    <>
-      <input type='text' value={value} placeholder="Enter your list..." onChange={(e)=> setValue(e.target.value)}></input>
-      <div>Todo</div>
-      <button onClick={addValue}>Add</button>
+    <div className='main'>
+      <p id='removeAlert'></p>
+      <h2>Todo List</h2>
+      <div className='input_div'>
+        <input type='text' value={value} placeholder="Enter your list..." onChange={(e)=> setValue(e.target.value)}></input>
+        <button onClick={addValue} id="addBtn">Add</button>
+      </div>
       <p>Here is your list :{")"}</p>
 
       {data.length > 0 && data.map((data, index) =>{
         return (
             <div key={index} className="lists_div">
-              <div>{data}</div>
+              <div className='data'>{data}</div>
               <div className='buttons_div'>
-                <button>Edit</button>
-                <button>Remove</button>
+                <button id="edit">Edit</button>
+                <button id="remove" onClick={() => removeList(index)}>Remove</button>
               </div>
             </div>
         )
       })}
-    </>
+    </div>
   )
 }
 

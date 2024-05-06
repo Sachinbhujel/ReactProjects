@@ -8,3 +8,101 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+.main{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: white;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h2{
+  font-family: sans-serif;
+  font-size: 34px;
+  color: black;
+}
+
+.input_div{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.main input{
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 16px;
+  padding: 8px;
+  color: black;
+}
+
+::placeholder{
+  color: grey;
+}
+
+.lists_div{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.data{
+  font-size: 21px;
+  color: rgb(87 87 87);
+}
+
+#addBtn{
+  border: none;
+  outline: none;
+  background-color: #0096C7;
+}
+
+button{
+  border-radius: 1px;
+  color: white;
+}
+
+.buttons_div{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: none;
+}
+
+#remove{
+  border: none;
+  outline: none;
+  background-color: #AE2012;
+}
+
+#edit{
+  border: none;
+  outline: none;
+}
+
+#removeAlert{
+  display: none;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: red;
+  padding: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s;
+}
