@@ -4,7 +4,7 @@ import {useTimer} from 'use-timer';
 
 function App() {
   let {time, start, pause, reset, status} = useTimer();
-
+  
     return (
         <>
             <div class="main">
