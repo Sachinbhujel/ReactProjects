@@ -22,6 +22,7 @@ function Gallery() {
   return (
     <div class='main'>
     <div className="container">
+        <h3>Filter Gallery</h3>
         <div className="buttons">
             <button onClick={() => setFilter("all")}>All</button>
             <button onClick={() => setFilter("nature")}>Nature</button>
