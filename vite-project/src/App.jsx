@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Services from './Services';
+import Donate from './Donate';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/donate" element={<Donate />} />
         <Route path="/*" element={<h1>404 not found</h1>} />
       </Routes>
     </>
