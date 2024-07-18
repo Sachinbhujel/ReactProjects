@@ -9,27 +9,27 @@ function Services() {
     </div>
     <div class="container">
         <div class="service-box">
-            <div class="service-title">Web Development</div>
+            <div class="service-title">Book Lending</div>
             <div class="service-description">
-                We create responsive and modern websites to help you grow your business online.
+                Borrow books easily with our extensive collection.
             </div>
         </div>
         <div class="service-box">
-            <div class="service-title">Graphic Design</div>
+            <div class="service-title">Online Catalog</div>
             <div class="service-description">
-                Our creative designers can help you with logos, brochures, and more.
+                Search and reserve books online from anywhere.
             </div>
         </div>
         <div class="service-box">
-            <div class="service-title">Graphic Design</div>
+            <div class="service-title">Community Events</div>
             <div class="service-description">
-                Our creative designers can help you with logos, brochures, and more.
+                Join our engaging events and workshops.
             </div>
         </div>
         <div class="service-box">
-            <div class="service-title">SEO Optimization</div>
+            <div class="service-title">Research Assistance</div>
             <div class="service-description">
-                Improve your website's visibility on search engines with our SEO services.
+                Get help with your research from our experts.
             </div>
         </div>
     </div>
