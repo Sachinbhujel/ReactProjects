@@ -4,6 +4,7 @@
     width: 96%;
     padding: 2em;
     border: 1px solid #ddd;
+    background-color: white;
     border-radius: 5px;
 }
 
@@ -63,7 +64,7 @@ footer {
     width: 100%;
 }
 
-@media(width>600px){
+@media(width>470px){
     .donation-div{
         width: 400px;
         margin: auto;

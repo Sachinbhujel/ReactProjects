@@ -40,8 +40,9 @@ function Navbar() {
             onClick={closeIcon}>
             close
           </span>
-          <Link to="/help" className="side_link">Help</Link>
+          <Link to="/" className="side_link">Home</Link>
           <Link to="/about" className="side_link">About</Link>
+          <Link to="/Help" className="side_link">Help</Link>
           <Link to="/blogs" className="side_link">Blogs</Link> 
           <Link to="/contact" className="side_link">Contact</Link>                    
           <Link to="/services" className="side_link">Services</Link>

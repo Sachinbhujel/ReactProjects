@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './Donate.css'
 
 function Donate() {
+  const formRef = useRef(null);
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+
+    formRef.current.reset();
+  }
   return (
     <>
         <section className="donation-div">
           <h1>Donate Us</h1>
           <p>Your donation helps us to continue our work.</p>
-          <form action="/submit-donation" method="post">
+          <form action="/submit-donation" onSubmit={handleSubmit} ref={formRef} method="post">
             <label htmlFor="name">Full Name:</label>
             <input type="text" id="name" name="name" required />
             
